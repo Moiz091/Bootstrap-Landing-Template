@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --color-bg-1: #121212;
+    --color-bg-2: #242424;
+    --color-brand: #e7b837;
+    --color-brand-light: #dbb959;
+    --color-body: #c0c0c0;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-heading: #fff;
+    --font-main: "Plus Jakarta Sans";
+    --border-radius: 32px;
+}
+
+
+body {
+    background-color:  #121212;
+    color: #c0c0c0;
+    font-family: "Plus Jakarta Sans";
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    color:#fff;
+}
+
+a {
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+a:hover {
+    color: #e7b837;
+}
+
+img {
+    width:10 %;
+}
+
+section {
+    padding-top:120px;
+    padding-bottom:120px;
+}
+/* Navbar */ 
+.navbar {
+    background-color: #121212;
+}
+
+/* button*/
+.btn {
+    padding: 8px 22px;
+}
+
+.btn-brand {
+    background-color:  #e7b837;
+    color:  #121212;
+    font-weight: 700;
+    border-radius: 100px;
+}
+.btn-brand:hover {
+      background-color: #dbb959;
+      border-color: rgba(255, 255, 255, 0.1);
+      color: #121212;
+}
+
+/* about */
+#about h1 {
+    font-weight:800;
+
+}
+
+#about p{
+    max-width:600px;
+    margin: 24px auto;
+}
+
+#about .input-group {
+    background-color: #242424;
+    padding:12px;
+    border-radius: 100px;
+    margin-bottom: 120px; 
+
+}
+
+#about .input-group .btn {
+    border-radius: 100px;
+}
+
+#about .form-control {
+    background-color: transparent;
+    border-color: transparent;
+    color:#c0c0c0;
+}
+
+#about .form-control:focus {
+    box-shadow: none;
+}
+
+.bg-image {
+    min-height:450px;
+    background-image: url(../images/cover1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* services */
+
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h6 {
+    background-color: #e7b837;
+    padding : 8px 16px;
+    border-radius: 100px;
+    color: #121212;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.section-title h1 {
+    nax-width: 700px;
+}
+
+
+/* service boxes */
+
+ .service{
+    border-radius:  32px;
+    background-color: #242424;
+ }
+
+ .icon-box {
+    width: 75px;
+    height: 75px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    backgorund-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    font-size: 35px;
+    color: #fff;
+ }
+
+ /* features */
+
+.feature-list {
+    padding: 0;
+    list-style: none;
+}
+
+.icon-box sm{
+    width:32px;
+    font-size:27px;
+
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Team */
+
+.team-member {
+    position:relative;
+
+}
+.team-member img { 
+    max-width: 180px;
+    height:180px;
+
+}
+.scoial-ciohns {
+    width:32px;
+    height:32px;
+    font-size:20px;
+}
+
+.team-member::before {
+    width :100%;
+    height : calc(100% - 90px);
+    background-color:#242424;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+ /* Carousel */ 
+
+ #reviews {
+    background-image: url(../images/reviews.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.reviews-carousel {
+    max-width: 700px;
+    background-color: var(--color-bg-1);
+}
+
+.review img {
+    width: 65px;
+    border-radius: 100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: auto;
+    width: 40px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--color-brand);
+}
+
+.carousel-control-prev {
+    border-right: 1px solid var(--color-border);
+}
+
+.carousel-control-next {
+    border-left: 1px solid var(--color-border);
+}
+
+/* Blog */ 
+.blog-post {
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-2);
+}
+
+.blog-post img {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.blog-post .title {
+    line-height: 1.4;
+}
+
+.bg-image-2 {
+    background-image: url(../images/cover2.jpg);
+}
+/* footer */
+footer {
+    padding-top: 80px;
+}
+
+footer img {
+    width: 160px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .footer-top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+footer .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
